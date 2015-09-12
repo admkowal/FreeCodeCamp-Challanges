@@ -23,3 +23,4 @@ function palindrome(str) {
     } else {
         return false;
     }
+}
