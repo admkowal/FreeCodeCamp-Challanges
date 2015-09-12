@@ -1,10 +1,13 @@
 function palindrome(str) {
     "use strict";
     var re = /(\W+)/g;
+    var re1 = /(\_)/g;
     var check = 0;
+    var i = 0;
     
     function trim(str) {
         str = str.replace(re, "");
+        str = str.replace(re1, "");
         str = str.toLowerCase();
         return str;
     }
@@ -24,3 +27,5 @@ function palindrome(str) {
         return false;
     }
 }
+
+palindrome("eye");
